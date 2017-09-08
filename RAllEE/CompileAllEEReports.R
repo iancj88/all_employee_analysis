@@ -1,5 +1,6 @@
 CompileAllEEReports <- function(path_to_files) {
   require(lubridate)
+  require(dplyr)
 
   #get the list of wb file names and filepaths
   wb_names_and_filepaths <- list.files(path_to_files, full.names = TRUE)
@@ -28,3 +29,4 @@ CompileAllEEReports <- function(path_to_files) {
 
   return(df_allEE)
 }
+
